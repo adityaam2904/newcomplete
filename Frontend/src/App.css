@@ -1,0 +1,171 @@
+/* ======== General Styles ======== */
+body {
+  background: #1E1E1E; /* Dark Gray */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== Navbar Styling ======== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1E1E1E;  /* Dark Gray */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #F8D210;  /* Golden Yellow */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #FF5733;
+}
+
+/* ======== Forms Styling ======== */
+.form-container {
+  background: #2C2C2C;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #3A3A3A;
+  background: #2C2C2C;
+  color: white;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border-color: #6A11CB;
+  outline: none;
+}
+
+/* Special styles for auction-specific inputs */
+input[type="datetime-local"] {
+  cursor: pointer;
+}
+
+/* ======== Buttons Styling ======== */
+.btn-submit {
+  background: #6A11CB;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background: #FF5733;
+}
+
+/* ======== Content Styling ======== */
+.content {
+  margin-top: 80px;
+  padding: 20px;
+  background: #2C2C2C;
+  border-radius: 10px;
+}
+
+/* ======== Auction Item Styling ======== */
+.item-description {
+  font-size: 18px;
+  color: #F8D210;
+}
+
+.current-bid {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.auction-link {
+  color: #F8D210;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auction-link:hover {
+  color: #FF5733;
+  text-decoration: underline;
+}
+
+/* ======== Footer Styling ======== */
+.footer {
+  background: #1E1E1E;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  color: #F8D210;
+  border-bottom: 2px solid #3A3A3A;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #FF5733;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #3A3A3A;
+  padding: 15px 0;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
